@@ -49,7 +49,7 @@ int main( int argc, char *argv[] ){
 char * itos( int interger, char * str, int size ){
 
 	int index ;
-	for( index=0 ; interger > 10 && index < size ; index++ ){
+	for( index=0 ; interger > 10 && index < size-1 ; index++ ){
 
 		str[index] = interger % 10 + '0' ;
 		interger /= 10 ;
@@ -100,3 +100,4 @@ int Germination(char * mother, char * embryo ){
 	return 0 ;
 }
 //-----------------------------------------------------------
+
